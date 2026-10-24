@@ -1,0 +1,68 @@
+{
+  "manifest_version": 3,
+  "name": "ConvoMoor · 对话港",
+  "version": "0.3.1",
+  "description": "ChatGPT 对话整理与导航：本地文件夹、星标、右侧小地图、书签笔记、云端侧聊和导出。",
+  "minimum_chrome_version": "111",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "ConvoMoor · 对话港",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "src/model.js",
+        "src/store.js",
+        "src/api.js",
+        "src/ui.js",
+        "src/reader.js",
+        "src/page-ui.js",
+        "src/history.js",
+        "src/cloud.js",
+        "src/exporter.js",
+        "src/ai-client.js",
+        "src/tools.js",
+        "src/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "local-ai.html",
+        "src/local-ai.js"
+      ],
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ]
+    }
+  ],
+  "optional_host_permissions": [
+    "https://*/*"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "version_name": "0.3.1 publication candidate"
+}

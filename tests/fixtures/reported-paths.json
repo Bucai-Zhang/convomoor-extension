@@ -1,0 +1,342 @@
+{
+  "description": "Attribute names and tag ancestry only, extracted from the user-provided structural report. Attribute values, text, positions and IDs are intentionally absent. Chains end before main because the original report limit was 24.",
+  "samples": [
+    {
+      "kind": "user",
+      "chain": [
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-user-message-bubble"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-content-search-unit-key"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-chatgpt-search-message-ids",
+            "data-chatgpt-search-unit-key"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-talvt-turn-state"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "data-content-search-turn-key"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-turn-key"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "style"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "style"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "style"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-chatgpt-conversation-selection-target",
+            "data-thread-find-target",
+            "style"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-mcp-app-portal-target",
+            "data-thread-user-message-navigation-content"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "style"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "aria-label",
+            "class",
+            "data-app-action-timeline-scroll",
+            "role",
+            "style",
+            "tabindex"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-request-input-activity-root"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "assistant",
+      "chain": [
+        {
+          "tag": "span",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "code",
+          "attributes": []
+        },
+        {
+          "tag": "pre",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "dir"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-code-block",
+            "data-markdown-copy",
+            "data-search-result-target",
+            "data-theme"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": []
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-d-direction",
+            "data-d-inline-reveal",
+            "data-dil-message-id",
+            "dir"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-theme",
+            "style"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-chatgpt-copy-reference",
+            "data-dil-source-message-id",
+            "data-markdown-copy"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-markdown-text-style",
+            "data-selected-text-overlay-target",
+            "dir",
+            "style"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-chatgpt-selection-conversation-id",
+            "data-chatgpt-selection-message-id"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": []
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "data-chatgpt-search-message-ids",
+            "data-chatgpt-search-unit-key",
+            "data-content-search-unit-key"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-talvt-turn-state"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "data-content-search-turn-key"
+          ]
+        },
+        {
+          "tag": "div",
+          "attributes": [
+            "class",
+            "data-turn-key"
+          ]
+        }
+      ]
+    }
+  ]
+}
