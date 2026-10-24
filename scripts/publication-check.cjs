@@ -2,10 +2,11 @@
 // A narrow publication gate, not a complete secret scan or legal clearance.
 const fs = require('node:fs');
 const path = require('node:path');
+const {spawnSync} = require('node:child_process');
 const root = path.resolve(__dirname, '..');
 const failures = [];
 const files = [];
-const skip = new Set(['node_modules', '.git', 'coverage']);
+const skip = new Set(['node_modules', '.git', '.idea', 'coverage']);
 const forbidden = new Set(['private', 'backups', 'local-data', 'screenshots-private', 'visual-evidence']);
 function walk(dir) {
   for (const item of fs.readdirSync(dir, {withFileTypes: true})) {
@@ -33,6 +34,11 @@ function walk(dir) {
   }
 }
 walk(root);
+if (fs.existsSync(path.join(root, '.git'))) {
+  const trackedIDE = spawnSync('git', ['ls-files', '-z', '--', '.idea'], {cwd: root, encoding: 'utf8'});
+  if (trackedIDE.status !== 0) failures.push('Could not check tracked IDE files');
+  else if (trackedIDE.stdout) failures.push('.idea: editor configuration is still tracked');
+}
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
 const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 const lock = JSON.parse(fs.readFileSync(path.join(root, 'package-lock.json'), 'utf8'));

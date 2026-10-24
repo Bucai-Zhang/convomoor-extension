@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ConvoMoor · 对话港",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "ChatGPT 对话整理与导航：本地文件夹、星标、右侧小地图、书签笔记、云端侧聊和导出。",
   "minimum_chrome_version": "111",
   "permissions": [
@@ -64,5 +64,5 @@
     "page": "options.html",
     "open_in_tab": true
   },
-  "version_name": "0.3.1 publication candidate"
+  "version_name": "0.3.2 preview"
 }

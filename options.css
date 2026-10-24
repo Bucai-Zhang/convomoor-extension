@@ -1,1 +1,14 @@
-body{margin:0;font:15px/1.7 system-ui,sans-serif;background:#f5f6f7;color:#202124}main{max-width:650px;margin:40px auto;background:white;padding:28px;border:1px solid #ddd;border-radius:12px}h1{font-size:22px}label{display:block;margin:18px 0}input{display:block;box-sizing:border-box;width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;font:inherit}button{padding:10px 14px;border:1px solid #a7be87;border-radius:6px;background:#f1f6e9;cursor:pointer}p{color:#646a72}#status{white-space:pre-wrap}@media(prefers-color-scheme:dark){body{background:#18191b;color:#eee}main{background:#242528;border-color:#444}input{background:#191a1b;color:#eee;border-color:#555}p{color:#b4b7bd}}
+:root{color-scheme:light dark}*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;font:15px/1.7 system-ui,sans-serif;background:#f5f6f7;color:#202124}
+main{max-width:720px;margin:32px auto;background:white;padding:28px;border:1px solid #ddd;border-radius:12px}
+header{display:flex;align-items:center;gap:16px}h1{font-size:22px;margin:0;flex:1}
+#close{font-size:26px;line-height:1;width:38px;height:38px;padding:0;background:transparent;border-color:transparent}
+fieldset{border:0;padding:0;margin:0;min-width:0}label{display:block;margin:18px 0 6px}
+input{display:block;width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;font:inherit}
+button{font:inherit;padding:9px 13px;border:1px solid #a7be87;border-radius:6px;background:#f1f6e9;color:#273719;cursor:pointer}
+button:hover{filter:brightness(.95)}button:disabled,fieldset:disabled{opacity:.65}button:disabled{cursor:wait}
+button:focus-visible,input:focus-visible{outline:2px solid #91ad62;outline-offset:2px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}p{color:#646a72}#key-help,.privacy{font-size:13px}
+#status{white-space:pre-wrap;overflow-wrap:anywhere;min-height:26px}#status.error{color:#ae3434}
+@media(max-width:760px){main{margin:12px;padding:20px}}
+@media(prefers-color-scheme:dark){body{background:#18191b;color:#eee}main{background:#242528;border-color:#444}input{background:#191a1b;color:#eee;border-color:#555}p{color:#b4b7bd}#status.error{color:#ffa6a6}#close{color:#eee}}

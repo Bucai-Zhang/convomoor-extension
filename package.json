@@ -1,6 +1,6 @@
 {
   "name": "convomoor-extension",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": true,
   "description": "Local conversation organization, navigation and optional API side chat for ChatGPT",
   "scripts": {
